@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <title> horizontal - parallax</title>
+    <link rel="stylesheet" href="css/plugin/reset.css"/>
+    <link rel="stylesheet" href="css/plugin/jquery.multiscroll.min.css">
+    <link rel="stylesheet" href="css/plugin/common.css">
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/jquery.easing.1.3.min.js"></script>
+    <script src="js/plugin/prefixfree.min.js"></script>
+    <script src="js/plugin/respond.min.js"></script>
+    <script src="js/plugin/jquery.nicescroll.min.js"></script>
+    <script src="js/plugin/jquery.multiscroll.js"></script>
+    <script src="js/plugin/logic.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--[if It IE 9] <script src="js/respond.min.js"></script> <[endif]-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="favicon" href="" type="image/x-icon">
+
+
+</head>
+<body>
+
+<!--<div class="posNum"></div>-->
+
+<audio src="madmax.mp3" id="sound" class="sound" autoplay loop></audio>
+<!---------- intro section ---------->
+<section id="intro">
+    <div class="introimage">
+        <img src="images/main/intro2.gif" height="824" width="1176" alt="인트로이미지"/>
+    </div>
+
+
+</section>
+
+<!---------- intro section end ---------->
+
+
+<!----------  fix section  ---------->
+
+<header id="header">
+
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="line">
+        <img src="images/common/gnb_line01.png" alt="라인"/>
+    </div>
+
+    <ul>
+        <li><a href="#"><img src="images/common/gnb_directer.png" alt="감독"/></a></li>
+        <li class="logo"></li>
+        <li><a href="#"><img src="images/common/gnb_original.png" alt="오리지널시리즈"/></a></li>
+        <li><a href="#"><img src="images/common/gnb_line02.png" alt="라인"/></a></li>
+    </ul>
+
+    <div class="sound">
+        <img class="music_on" src="images/common/gnb_music.png" alt="뮤직"/>
+        <img class="music_off" src="images/common/gnb_musicoff.png" alt="뮤직"/>
+    </div>
+
+</header>
+
+<!-- header end -->
+
+<article id="menu_pop">
+    <div class="menu_chain1">
+        <img src="images/common/menu/menu_chain1.png" alt="체인">
+    </div>
+    <div class="menu_chain2">
+        <img src="images/common/menu/menu_chain2.png" alt="체인">
+    </div>
+    <div class="menu_chain3">
+        <img src="images/common/menu/menu_chain3.png" alt="체인">
+    </div>
+
+    <div class="menu">
+        <div class="menu_01">
+            <img src="images/common/menu/menu_01.png" height="19" width="22" alt="메뉴숫자"/>
+        </div>
+        <div class="menu_02">
+            <img src="images/common/menu/menu_02.png" height="19" width="25" alt="메뉴숫자"/>
+        </div>
+        <div class="menu_03">
+            <img src="images/common/menu/menu_03.png" height="19" width="25" alt="메뉴숫자"/>
+        </div>
+        <div class="menu_04">
+            <img src="images/common/menu/menu_04.png" height="19" width="25" alt="메뉴숫자"/>
+        </div>
+        <div class="menu_05">
+            <img src="images/common/menu/menu_05.png" height="19" width="25" alt="메뉴숫자"/>
+        </div>
+    </div>
+
+    <div class="menu_text">
+        <div class="menu_home">
+            <img src="images/common/menu/menu_home.png" height="76" width="228" alt="홈"/>
+<!--            <div class="yellow_text"></div>-->
+            <div class="yellow_line"></div>
+        </div>
+        <div class="menu_story">
+            <img src="images/common/menu/menu_story.png" height="83" width="260" alt="스토리"/>
+            <div class="yellow_line"></div>
+        </div>
+        <div class="menu_character">
+            <img src="images/common/menu/menu_character.png" height="86" width="528" alt="캐릭터"/>
+            <div class="yellow_line"></div>
+        </div>
+        <div class="menu_trailer">
+            <img src="images/common/menu/menu_trailer.png" height="86" width="345" alt="트레일러"/>
+            <div class="yellow_line"></div>
+        </div>
+        <div class="menu_gallery">
+            <a href="sub/gallery.html"><img src="images/common/menu/menu_gallery.png" height="86" width="382" alt="갤러리"/></a>
+            <div class="yellow_line"></div>
+        </div>
+    </div>
+
+
+
+    <ul class="sns">
+        <li><img src="images/common/menu/menu_facebook.png" alt="페이스북"></li>
+        <li><img src="images/common/menu/menu_twitter.png" alt="트위터"></li>
+        <li><img src="images/common/menu/menu_youtube.png" alt="유튜브"></li>
+        <li><img src="images/common/menu/menu_insta.png" alt="인스타"></li>
+    </ul>
+
+</article>
+
+
+
+<!----------  fix section  end ---------->
+
+
+
+<main id="container" class="container">
+    <section class="main">
+        <section id="section01">
+            <div class="main_illust">
+                <img src="images/main/main_illust.png" alt="메인일러스트">
+            </div>
+            <div class="main_title01">
+                <img src="images/main/main_title01.png" alt="메인타이틀">
+            </div>
+            <div class="main_title02">
+                <img src="images/main/main_title02.png" alt="메인타이틀2">
+            </div>
+            <div class="main_date">
+                <img src="images/main/main_date.png" alt="개봉일">
+            </div>
+            <div class="main_scroll">
+                <img src="images/main/btn_scroll.png" alt="스크롤버튼">
+            </div>
+
+        </section><!-- scene01 end -->
+
+        <section id="section02">
+
+            <div class="sub_text01"></div>
+            <div class="sub_car">
+                <img src="images/sub/sub_car.png" alt="자동차그림">
+            </div>
+            <div class="sub_lineillsut">
+                <img src="images/sub/sub_lineillust.png" alt="라인">
+            </div>
+            <div class="sub_text02"></div>
+            <div class="sub_text03">
+                <img src="images/sub/sub_text03.png" alt="텍스트">
+            </div>
+            <div class="sub_yellowline"></div>
+            <div class="sub_gas">
+                <img src="images/sub/gas.gif" height="423" width="918" alt="배기가스"/>
+            </div>
+            <div class="sub_circle">
+                <img src="images/sub/circle.gif" height="326" width="576" alt="서클">
+            </div>
+
+
+        </section><!-- scene02 end -->
+
+        <section id="section03">
+            <div class="sub_illust01">
+                <img src="images/sub/sub_illust01.png" alt="일러스트">
+            </div>
+            <div class="sub_illust02">
+                <img src="images/sub/sub_illust02.png" alt="일러스트">
+            </div>
+            <div class="sub_illust03">
+                <img src="images/sub/sub_illust03.png" alt="일러스트">
+            </div>
+            <div class="sub_down">
+                <img src="images/sub/down.gif" alt="흘러내리는효과">
+            </div>
+            <div class="sub_pen">
+                <img src="images/sub/sub_pen.gif" alt="줄긋기">
+            </div>
+            <div class="sub_text04">
+                <img src="images/sub/sub_text04.png" alt="텍스트">
+            </div>
+            <div class="sub_text05">
+                <img src="images/sub/sub_text05.png" alt="텍스트">
+            </div>
+            <div class="sub_text06">
+                <img src="images/sub/sub_text06.png" alt="텍스트">
+            </div>
+            <div class="sub_text07">
+                <img src="images/sub/sub_text07.png" alt="텍스트">
+            </div>
+
+
+        </section><!-- scene03 end -->
+
+        <section id="section04">
+            <div class="sub_lineillsut02">
+                <img src="images/sub/sub_lineillust02.png" alt="라인효과">
+            </div>
+
+
+            <div class="sub_text08">
+                <div class="text_n"></div>
+                <div class="text_o"></div>
+                <div class="text_t"></div>
+                <div class="text_g"></div>
+                <div class="text_o2"></div>
+                <div class="text_i"></div>
+                <div class="text_n2"></div>
+                <div class="text_g2"></div>
+                <div class="text_b"></div>
+                <div class="text_a"></div>
+                <div class="text_c"></div>
+                <div class="text_k"></div>
+            </div>
+
+
+            <div class="sub_text09">
+                <img src="images/sub/sub_text09.png" alt="텍스트">
+            </div>
+            <div class="sub_yellow03"></div>
+            <div class="sub_yellow04"></div>
+            <div class="sub_skull2">
+                <img src="images/sub/sub_skull2.gif" alt="해골">
+            </div>
+
+
+        </section><!-- scene04 end -->
+
+        <section id="section05">
+            <div class="sub_text10">
+                <img src="images/sub/sub_text10.png" alt="텍스트">
+            </div>
+            <div class="sub_text11">
+                <img src="images/sub/sub_text11.png" alt="텍스트">
+            </div>
+            <div class="sub_text12">
+                <img src="images/sub/sub_text12.png" alt="텍스트">
+            </div>
+            <div class="sub_text13">
+                <img src="images/sub/sub_text13.png" alt="텍스트">
+            </div>
+            <div class="sub_text14">
+                <img src="images/sub/sub_text14.png" alt="텍스트">
+            </div>
+            <div class="sub_text15">
+                <div class="text_w"></div>
+                <div class="text_i"></div>
+                <div class="text_t"></div>
+                <div class="text_n"></div>
+                <div class="text_e"></div>
+                <div class="text_s"></div>
+                <div class="text_s2"></div>
+            </div>
+
+            <div class="sub_blackLine"></div>
+
+
+
+        </section><!-- scene05 end -->
+
+        <section id="section06">
+            <div class="sub_joe">
+                <img src="images/sub/sub_joe.png" alt="임모탄조">
+            </div>
+            <div class="sub_lineillust03">
+                <img src="images/sub/sub_lineillust03.png" alt="라인효과">
+            </div>
+            <div class="sub_text16"></div>
+            <div class="sub_text17"></div>
+            <div class="sub_text18"></div>
+            <div class="sub_text19"></div>
+            <div class="sub_skull">
+                <img src="images/sub/sub_skull.png" alt="해골">
+            </div>
+
+            <div class="sub_yellow05"></div>
+
+            <div class="sub_lineillust04">
+                <div class="sub_war"><img src="images/sub/sub_war.png" alt="싸우는이미지"></div>
+                <div class="illust04"><img src="images/sub/sub_lineillust04.png" alt="싸우는이미지"></div>
+            </div>
+
+            <div class="gun">
+                <img src="images/sub/gun.gif" alt="총">
+            </div>
+
+        </section><!-- scene06 end -->
+
+        <section id="section07">
+            <div class="sub_text20">
+                <img src="images/sub/sub_text20.png" alt="텍스트">
+            </div>
+            <div class="sub_max">
+                <img src="images/sub/sub_max.png" alt="맥스이미지">
+            </div>
+            <div class="sub_text21_1"></div>
+            <div class="sub_text21_2"></div>
+            <div class="sub_furiosa">
+                <img src="images/sub/sub_furiosa.png" alt="퓨리오사이미지">
+            </div>
+            <div class="sub_lineillust05">
+                <img src="images/sub/sub_lineillust05.png" alt="라인효과">
+            </div>
+            <div class="sub_lineillust06">
+                <img src="images/sub/sub_lineillust06.png" alt="라인효과">
+            </div>
+            <div class="sub_text22">
+                <img src="images/sub/sub_text22.png" alt="텍스트">
+            </div>
+            <div class="sub_skull">
+                <img src="images/sub/sub_skull.png" alt="해골">
+            </div>
+
+
+        </section><!-- scene07 end -->
+
+        <section id="section08">
+            <div class="text_wrap">
+                <p>‘where must we go...</p>
+                <p>we who wander this Wasteland</p>
+                <p>in search of our better selves?’</p>
+                <p>The First History Man
+                    <span>|</span></p>
+            </div>
+
+
+
+
+        </section><!-- scene08 end -->
+    </section><!-- wrap end -->
+</main><!-- scrollBox end -->
+
+
+
+<!----------  pop section  ---------->
+
+<article id="character_pop">
+    <div class="paint"><img src="images/common/character/paint.png" alt="페인트효과"></div>
+
+    <ul id="menu">
+        <li data-menuanchor="first"><a href="#first" class="max"></a></li>
+        <li data-menuanchor="second"><a href="#second" class="nux"></a></li>
+        <li data-menuanchor="third"><a href="#third" class="furiosa"></a></li>
+    </ul>
+
+
+    <div id="myContainer">
+        <div class="ms-left">
+            <div class="ms-section" id="left1">
+                <img src="images/common/character/left_max.png" alt="일러스트"/>
+            </div>
+
+            <div class="ms-section" id="left2">
+                <img src="images/common/character/left_nux.png" alt="일러스트"/>
+            </div>
+
+            <div class="ms-section" id="left3">
+                <img src="images/common/character/left_furiosa.png" alt="일러스트"/>
+            </div>
+
+
+        </div>
+
+        <div class="ms-right">
+            <div class="ms-section" id="right1">
+                <img src="images/common/character/max_illust.png" alt="일러스트"/>
+            </div>
+
+            <div class="ms-section" id="right2">
+                <img src="images/common/character/nux_illust.png" alt="일러스트"/>
+            </div>
+
+            <div class="ms-section" id="right3">
+                <img src="images/common/character/furiosa_illust.png" alt="일러스트"/>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="btn">
+        <div class="btn_prev">
+            <img src="images/common/character/btn_prev.png" alt="버튼">
+        </div>
+        <div class="btn_next">
+            <img src="images/common/character/btn_next.png" alt="버튼">
+        </div>
+    </div>
+
+
+
+</article>
+
+
+<!--pop end-->
+
+<article id="trailer">
+    <div class="video01">
+        <video width="1920" height="980" loop id="video01">
+            <source src="images/common/video.mp4" type="video/mp4">
+        </video>
+<!--        <div>-->
+<!--            <img src="images/common/trailer_image.png" alt="트레일러이미지">-->
+<!--        </div>-->
+    </div>
+    <div class="videotext">
+        <div class="count">
+            <img src="images/common/count.png" alt="넘버카운트">
+        </div>
+        <div class="trailer_title">
+            <img src="images/common/trailer_tilte.png" alt="트레일러제목">
+        </div>
+        <div class="trailer_text">
+            <img src="images/common/trailer_text.png" alt="트레일러내용">
+        </div>
+    </div>
+
+    <div class="btn_play">
+        <img src="images/common/btn_play.png" alt="플레이버튼">
+    </div>
+    <div class="btn_stop">
+        <img src="images/common/btn_stop.png" alt="일시정지버튼">
+    </div>
+    <ul class="pagenation">
+        <li class="pagenation">
+            <a href="#" class="active"></a>
+        </li>
+        <li>
+            <a href="#"></a>
+        </li>
+        <li>
+            <a href="#"></a>
+        </li>
+        <li>
+            <a href="#"></a>
+        </li>
+        <li>
+            <a href="#"></a>
+        </li>
+        <li>
+            <a href="#"></a>
+        </li>
+    </ul>
+</article>
+
+
+
+
+
+
+
+
+
+<!----------  pop section  end  ---------->
+
+
+</body>
+</html>
